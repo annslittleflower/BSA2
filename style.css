@@ -1,0 +1,104 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+#input{
+    box-sizing: border-box;
+    border:0px;
+    border-bottom:2px solid #aaa;
+    font-size: 20px;
+    width:400px;
+    height:35px;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:50px;
+    margin-bottom: 70px;
+    padding-left: 20px;
+}
+
+#input:focus{
+    outline:none;
+    border-bottom:2px solid #666;
+}
+
+#tip{
+    text-align: center;
+}
+
+#list > div{
+    padding-left: 5px;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right:auto;
+    border:1px solid gray;
+    width: 350px;
+    height: 40px;
+    padding-top: 7px;
+}
+
+#list{
+    font-size: 18px;
+    margin-left: auto;
+    margin-right:auto;
+}
+
+/*icon styling */
+input[type="checkbox"] {
+    display:none;
+    clear: both;
+}
+
+input[type="checkbox"] + label span {
+    display:inline-block;
+    width:20px;
+    height:20px;
+    background:url(check.png) -21px top no-repeat;
+}
+
+input[type="checkbox"]:checked + label span {
+    background:url(check.png) left top no-repeat;
+}
+
+div[id*="item"]{
+    position: relative;
+}
+
+div[id*="item"]:hover .close{
+    display: block;
+    cursor: pointer;
+}
+
+#wrapper{
+    display: none;
+    width: 400px;
+    margin: 0 auto;
+    margin-top:70px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; 
+}
+
+#rmvall{
+    display: none;
+    margin-left: 100px;
+    width: 200px;
+    padding: 15px;
+    border: 1px solid red;
+    border-radius: 13px;
+    font-size: 20px;
+    background-color: red;
+    cursor:pointer;
+    color:white;
+}
+
+.close{
+    display: none;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top:8px;
+    right:7px;
+    background-image: url(close.png);
+}
